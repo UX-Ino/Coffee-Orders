@@ -1,0 +1,85 @@
+[
+  {
+    "brand": "OOZY COFFEE",
+    "store": "홍대동교점",
+    "url": "https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1",
+    "capturedByNet": [
+      {
+        "url": "https://app.passorder.co.kr/api/auth/guest-login",
+        "data": {
+          "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NjA1ODQxMjEsIm5iZiI6MTc2MDU4NDEyMSwianRpIjoiMzkwOWExZGEtMzU3OS00Y2Y4LTk2MzUtN2ZlNjMyNjUxY2E2IiwiaWRlbnRpdHkiOiI4MWRlYWEwZi01NmRhLTQwMWItOTIwZS1mYzIzMGVkZWI0MDYiLCJleHAiOjE3NjA1OTg1MjEsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7InVzZXJfYWNjb3VudF9pZGVudGlmaWVyIjpudWxsLCJhcGlfcGVybWlzc2lvbl9ncm91cF9pZGVudGlmaWVycyI6WyI2ODQ2MTcyNy0xM2IxLTQ2OGEtOTE3My01NmUyYWI5NWYyNDAiXSwicm9sZXMiOjB9fQ.IVFYWDnJyV6pIU6iN07xHtk_Qotc2RzXKrn7eZ51Es0",
+          "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4MWRlYWEwZi01NmRhLTQwMWItOTIwZS1mYzIzMGVkZWI0MDYiLCJqdGkiOiJmOWExODMxYy0xNDdmLTQwZjctYjIyOC02ODgyY2I3Njk2ODciLCJpZGVudGl0eSI6IjgxZGVhYTBmLTU2ZGEtNDAxYi05MjBlLWZjMjMwZWRlYjQwNiIsImV4cCI6MTc5MjE0MTA0NywidHlwZSI6InJlZnJlc2giLCJ1c2VyX2FjY291bnRfaWRlbnRpZmllciI6IjZlMmJmNGZiLTZkZDMtNDM2Yi1iMDE0LWJlZWVhNWVkODVhZCIsImlhdCI6MTc2MDU4NDEyMX0.LpF_O5y1PletRc0zmhkFoBJcs1wvjiGOh_iiSU73Duc"
+        }
+      },
+      {
+        "url": "https://release.passorder.me:9999/analysis/action-record",
+        "data": {
+          "data": null,
+          "status_code": 200,
+          "message": "success"
+        }
+      },
+      {
+        "url": "https://release.passorder.me:9999/analysis/action-record",
+        "data": {
+          "data": null,
+          "status_code": 200,
+          "message": "success"
+        }
+      },
+      {
+        "url": "https://release.passorder.me:9999/analysis/action-record",
+        "data": {
+          "data": null,
+          "status_code": 200,
+          "message": "success"
+        }
+      }
+    ]
+  },
+  {
+    "brand": "OOZY COFFEE",
+    "store": "동교점",
+    "url": "https://app.passorder.co.kr/normal/b645519d-2ee5-4338-a8c1-cc1d69629ff4",
+    "capturedByNet": [
+      {
+        "url": "https://app.passorder.co.kr/api/auth/guest-login",
+        "data": {
+          "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NjA1ODQxMjMsIm5iZiI6MTc2MDU4NDEyMywianRpIjoiNWEzOThmYjgtNTkwOC00OTg0LThkMGQtZDFmYmVmMDI3OWZiIiwiaWRlbnRpdHkiOiJlMDlkZjJjOS04YmZmLTRmM2YtOGFkZi1hZmMxYTdlZmNiZGYiLCJleHAiOjE3NjA1OTg1MjMsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7InVzZXJfYWNjb3VudF9pZGVudGlmaWVyIjpudWxsLCJhcGlfcGVybWlzc2lvbl9ncm91cF9pZGVudGlmaWVycyI6WyI2ODQ2MTcyNy0xM2IxLTQ2OGEtOTE3My01NmUyYWI5NWYyNDAiXSwicm9sZXMiOjB9fQ.p415Umq4lAB-hVW_k-hWAPKMltKXWPeHz6NlSPQbqfM",
+          "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMDlkZjJjOS04YmZmLTRmM2YtOGFkZi1hZmMxYTdlZmNiZGYiLCJqdGkiOiIxOTc4NDUxZi1iZDdhLTRiNTItYjhlMy1hOGQ1NDFiYThiNzgiLCJpZGVudGl0eSI6ImUwOWRmMmM5LThiZmYtNGYzZi04YWRmLWFmYzFhN2VmY2JkZiIsImV4cCI6MTc5MjE0MTA0OSwidHlwZSI6InJlZnJlc2giLCJ1c2VyX2FjY291bnRfaWRlbnRpZmllciI6IjBlN2NmM2RlLWU4ODItNDlhNC1iZTBmLTQ2MWY4NTYxZjAxZiIsImlhdCI6MTc2MDU4NDEyM30.L3hpWM9TyWtaC5jmc3OeEWBCLnArPWzdRZZ6nOkUqlE"
+        }
+      },
+      {
+        "url": "https://release.passorder.me:9999/analysis/action-record",
+        "data": {
+          "data": null,
+          "status_code": 200,
+          "message": "success"
+        }
+      },
+      {
+        "url": "https://app.passorder.co.kr/api/auth/guest-login",
+        "data": {
+          "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NjA1ODQxMjMsIm5iZiI6MTc2MDU4NDEyMywianRpIjoiNjI4MWUwZTItMTczMy00ZGMzLTg0MmMtMjdlOWYyN2VkZGIxIiwiaWRlbnRpdHkiOiIwODkxZWNhNy1iM2ZkLTQ5OTAtOTJhYy1mMTEwOTFkYTQ0YmUiLCJleHAiOjE3NjA1OTg1MjMsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7InVzZXJfYWNjb3VudF9pZGVudGlmaWVyIjpudWxsLCJhcGlfcGVybWlzc2lvbl9ncm91cF9pZGVudGlmaWVycyI6WyI2ODQ2MTcyNy0xM2IxLTQ2OGEtOTE3My01NmUyYWI5NWYyNDAiXSwicm9sZXMiOjB9fQ.VBm7jVi_UJO9wd3C2t1PqEW8tSKCnDhRCmVE8hyavZI",
+          "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwODkxZWNhNy1iM2ZkLTQ5OTAtOTJhYy1mMTEwOTFkYTQ0YmUiLCJqdGkiOiI2NmY1MzA3Yi1iMWU4LTRmMTAtOTJhOS05YzIwMDM0MjQyZmEiLCJpZGVudGl0eSI6IjA4OTFlY2E3LWIzZmQtNDk5MC05MmFjLWYxMTA5MWRhNDRiZSIsImV4cCI6MTc5MjE0MTA0OSwidHlwZSI6InJlZnJlc2giLCJ1c2VyX2FjY291bnRfaWRlbnRpZmllciI6ImQ0YmM5NGY5LTA4NjEtNDlkZi1iYWI1LTY1ZDMxN2FlMjkwNiIsImlhdCI6MTc2MDU4NDEyM30.6EQJ8O3-w7gky107OvSeYoNVwqTTTK9RtfSvsIYTOIY"
+        }
+      },
+      {
+        "url": "https://release.passorder.me:9999/analysis/action-record",
+        "data": {
+          "data": null,
+          "status_code": 200,
+          "message": "success"
+        }
+      },
+      {
+        "url": "https://release.passorder.me:9999/analysis/action-record",
+        "data": {
+          "data": null,
+          "status_code": 200,
+          "message": "success"
+        }
+      }
+    ]
+  }
+]

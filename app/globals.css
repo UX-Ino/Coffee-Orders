@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-oozy: #7c3aed;
+  --brand-gate: #06b6d4;
+}
+
+/* Starbucks-like UI helpers */
+.sbx-card {
+  @apply rounded-xl border border-sbx-border bg-white p-3 shadow-soft;
+}
+.sbx-tab {
+  @apply inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium border transition-colors;
+}
+.sbx-btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-sbx-primary px-4 py-2 text-sm font-semibold text-white hover:bg-sbx-primaryDark transition-colors;
+}
+.sbx-btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-sbx-border bg-white px-4 py-2 text-sm font-medium text-sbx-ink hover:bg-sbx-surface transition-colors;
+}
+.sbx-progress-track {
+  @apply mt-1 h-2 w-full rounded bg-sbx-border/60;
+}
+.sbx-progress-bar {
+  @apply h-2 rounded bg-sbx-primary;
+}

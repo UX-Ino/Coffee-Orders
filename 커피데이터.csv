@@ -1,0 +1,64 @@
+brand,store,category,item_name_ko,item_name_en,price_krw,options_json,source_url,captured_at,note
+OOZY COFFEE,홍대동교점,COFFEE,바닐라라떼,,3500.0,,https://www.diningcode.com/profile.php?rid=KaskMK3SiS6R,2025-10-15,Diningcode 표기
+OOZY COFFEE,홍대동교점,COFFEE/BEVERAGE,오모테산도 커피,,4300.0,,https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1,2025-10-15,
+OOZY COFFEE,홍대동교점,DESSERT,슈프림 월넛 다크초코 쿠키,,1800.0,,https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1,2025-10-15,
+OOZY COFFEE,홍대동교점,MATCHA,(HOT) 우지 딥 말차 라떼,,4500.0,"{""temperature"":""HOT""}",https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1,2025-10-15,
+OOZY COFFEE,홍대동교점,MATCHA,(ICE) 우지 딥 말차 라떼,,4500.0,"{""temperature"":""ICE""}",https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1,2025-10-15,
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,딥 헤이즐넛 더블샷,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,라이트 바닐라라떼,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,라이트 바닐라크림콜드브루,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,레모니카노,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,오곡 프로틴 드링크,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,우지 딥 말차 젤라떼,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,우지 딥 말차라떼,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,유자 크러쉬 콜드브루,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,자몽 허니 블랙티,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,제로 복숭아 아이스티,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,제로 헤이즐넛 샤케리카노,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,제로 헤이즐넛 아메리카노,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,NEW/브랜드공식,피넛 프로틴 드링크,,,,https://oozycoffee.com/Vision,2025-10-15,브랜드 공식 NEW(지점 가격 미표기)
+OOZY COFFEE,홍대동교점,TEA,우지 말차 유자티,,3900.0,,https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1,2025-10-15,
+OOZY COFFEE,홍대동교점,라떼(1L),디카페인 카페라떼 (1L),,6300.0,"{""size"":""1L"",""temperature"":""ICE only""}",https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1,2025-10-15,
+OOZY COFFEE,홍대동교점,라떼(1L),딥카페라떼 (1L),,4800.0,"{""size"":""1L"",""temperature"":""ICE only""}",https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1,2025-10-15,
+OOZY COFFEE,홍대동교점,라떼(1L),바닐라라떼 (1L),,5500.0,"{""size"":""1L"",""temperature"":""ICE only""}",https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1,2025-10-15,
+OOZY COFFEE,홍대동교점,라떼(1L),카페라떼 (1L),,4800.0,"{""size"":""1L"",""temperature"":""ICE only""}",https://app.passorder.co.kr/normal/1a0ad87c-334d-4e7c-aec1-3a46881e01c1,2025-10-15,
+카페게이트,동교점,COFFEE,동교라떼,,4300.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,COFFEE,신촌라떼,,4300.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,COFFEE,아메리카노,,1800.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,COFFEE,연남라떼,,4300.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,COFFEE,올데이라떼,,3200.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,COFFEE,플랫화이트,,3400.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,COFFEE,화이트 아메리카노,,2500.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,TEA,오렌지 자몽 블랙티,,3900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,TEA,제주 청귤 캐모티,,3900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,기타,애사비에이,,4000.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,기타,애샷,,3900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,버블라떼,애플밀크버블라,,3900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,베이글/샌드,불고기 더블치즈 베이글,,5900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,보틀(1L),1L 보틀 돌체라떼,,7300.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,보틀(1L),1L 보틀 딸기라떼,,7000.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,보틀(1L),1L 보틀 리얼 초코라떼,,7000.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,보틀(1L),1L 보틀 바닐라빈 라떼,,6400.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,보틀(1L),1L 보틀 복숭아 아이스티,,5500.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,보틀(1L),1L 보틀 아메리카노,,4500.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,보틀(1L),1L 보틀 카페라떼,,6000.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,샌드위치,B.L.T.E,,5900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,샌드위치,스피니치(시금치토마토불고기) 샌드위치,,6400.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,샌드위치,에그마요 샌드위치,,5400.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,샌드위치,햄치즈 샌드위치,,3900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,세트,BLTE 샌드위치 + 아메리카노,,7400.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,세트,SET BLTE 샌드위치 + 아메리카노,,7900.0,,https://app.passorder.co.kr/normal/b645519d-2ee5-4338-a8c1-cc1d69629ff4,2025-10-15,PassOrder 노출가
+카페게이트,동교점,세트,SET 불고기 더블치즈 샌드위치 + 아메리카노,,7900.0,,https://app.passorder.co.kr/normal/b645519d-2ee5-4338-a8c1-cc1d69629ff4,2025-10-15,PassOrder 노출가
+카페게이트,동교점,세트,SET 시금치 토마토 불고기 샌드위치 + 아메리카노,,8400.0,,https://app.passorder.co.kr/normal/b645519d-2ee5-4338-a8c1-cc1d69629ff4,2025-10-15,PassOrder 노출가
+카페게이트,동교점,세트,불고기 더블치즈 샌드위치+아메리카노,,7400.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,세트,스피니치 샌드위치+아메리카노,,7900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,세트,에그마요 샌드위치 + 아메리카노,,6900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,세트,햄치즈 샌드위치 + 아메리카노,,5400.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,스무디,애플시나몬요거트스무디,,4300.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,스페셜,라이트 바닐라빈라떼,,3500.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,스페셜,트리플 글레이즈드라떼,,4300.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,에이드,애플에이드,,3900.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,와플,누텔라 바나나 와플,,3500.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,와플,애플 시나몬 와플,,3000.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,와플,초코 생크림 와플,,3000.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기
+카페게이트,동교점,프로모션,[패스오더전용] 100원 아메리카노,,100.0,,https://www.diningcode.com/profile.php?rid=BYn86iig668x,2025-10-15,Diningcode 표기

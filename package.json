@@ -1,0 +1,45 @@
+{
+  "name": "coffee-order",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "migrate:csv": "ts-node scripts/migrate-csv-to-notion.ts"
+  },
+  "dependencies": {
+    "@notionhq/client": "2.2.15",
+    "next": "14.2.5",
+    "puppeteer": "^24.25.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "swr": "2.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.14",
+    "@types/react": "18.3.8",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.5",
+    "playwright": "^1.56.0",
+    "postcss": "8.4.47",
+    "prettier": "3.3.3",
+    "tailwindcss": "3.4.13",
+    "ts-node": "10.9.2",
+    "typescript": "5.6.3"
+  },
+  "description": "Next.js 14(App Router) + TypeScript + Tailwind 기반의 팀 커피 주문 관리 페이지. `spec/`의 요구사항, 설계, 작업 문서를 기준으로 구성되었습니다.",
+  "main": "postcss.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
