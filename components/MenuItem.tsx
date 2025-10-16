@@ -1,4 +1,4 @@
-import type { Menu } from '@/types';
+import type { Menu } from '@/types/index';
 
 export default function MenuItem({ item }: { item: Menu }) {
   return (
@@ -8,4 +8,3 @@ export default function MenuItem({ item }: { item: Menu }) {
     </button>
   );
 }
-
