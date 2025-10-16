@@ -2,5 +2,8 @@ node_modules
 .next
 out
 .env
+.env*
 .env.local
 .vercel
+.DS_Store
+debug_json/
