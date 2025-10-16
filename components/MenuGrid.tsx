@@ -19,7 +19,7 @@ const fetcher = (url: string) => fetch(url).then((r) => r.json());
 export default function MenuGrid({ brand, withCategoryTabs = false }: { brand: 'oozy' | 'gate'; withCategoryTabs?: boolean }) {
   const { data, error, isLoading } = useSWR<{ menus: Menu[] }>(`/api/menu/${brand}`, fetcher);
   const { state, dispatch } = useOrder();
-  const menus = data?.menus ?? [];
+  const menus = useMemo(() => data?.menus ?? [], [data?.menus]);
   const rules = getBrandRules(brand);
   const categories = useMemo(() => {
     const set = new Set(menus.map((m) => m.category).filter(Boolean));
@@ -30,7 +30,7 @@ export default function MenuGrid({ brand, withCategoryTabs = false }: { brand: '
       if (wa !== wb) return wa - wb;
       return a.localeCompare(b, 'ko');
     });
-  }, [menus]);
+  }, [menus, rules]);
   const [activeCat, setActiveCat] = useState<string | null>(null);
   useEffect(() => {
     if (activeCat) return;
