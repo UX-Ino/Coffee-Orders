@@ -1,24 +1,22 @@
 import { NextResponse } from 'next/server';
 import { NotionService } from '@/lib/notion/service';
 
+export const runtime = 'nodejs';
+
 export async function POST(req: Request) {
   try {
     const body = await req.json();
     const name: string | undefined = body?.name;
+    const date: string | undefined = body?.date; // YYYY-MM-DD
     const brandKey: 'oozy' | 'gate' | null | undefined = body?.brandKey ?? null;
-    let date: string | undefined = body?.date;
 
-    if (!name) return NextResponse.json({ error: 'Missing name' }, { status: 400 });
-
-    if (!date) {
-      date = new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
-        .toISOString()
-        .slice(0, 10);
+    if (!name || !date) {
+      return NextResponse.json({ error: 'name and date are required' }, { status: 400 });
     }
 
     const svc = new NotionService();
-    const res = await svc.deleteOrdersByDate({ customerName: name, brandKey, date });
-    return NextResponse.json({ ok: true, ...res, date });
+    const res = await svc.deleteOrdersByDate({ customerName: name, date, brandKey });
+    return NextResponse.json({ ok: true, ...res });
   } catch (e: any) {
     return NextResponse.json({ error: e?.message ?? 'Unknown error' }, { status: 500 });
   }

@@ -4,6 +4,7 @@ const nextConfig = {
     remotePatterns: [
       { protocol: 'https', hostname: 'passorder-static.passorder.site' },
       { protocol: 'https', hostname: 'static-cdn.passorder.site' },
+      { protocol: 'https', hostname: 'noticon-static.tammolo.com' },
     ],
   },
   experimental: {

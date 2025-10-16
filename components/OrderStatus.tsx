@@ -1,5 +1,6 @@
 "use client";
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
+import Image from 'next/image';
 import { useOrder } from '@/lib/state/OrderContext';
 
 export default function OrderStatus() {
@@ -16,6 +17,31 @@ export default function OrderStatus() {
     });
     return Array.from(map.entries());
   }, [state.orders]);
+
+  // Randomly assign two "배달의민족" tags among ordered members when progress hits 100%.
+  useEffect(() => {
+    if (totalMembers <= 0) return;
+    const currentOrdered = state.orders.filter((o) => o.status === 'ordered');
+    const currentTagged = currentOrdered.filter((o) => (o.tags ?? []).includes('배달의민족')).map((o) => o.name);
+    if (progress < 100) {
+      if (currentTagged.length > 0) dispatch({ type: 'clearBaemin' });
+      return;
+    }
+    // progress === 100
+    const need = Math.min(2, currentOrdered.length);
+    if (need === 0) {
+      if (currentTagged.length > 0) dispatch({ type: 'clearBaemin' });
+      return;
+    }
+    // If already exactly 'need' tagged and all are still ordered, keep as is
+    if (currentTagged.length === need) return;
+    // Pick randomly 'need' names from ordered
+    const shuffled = [...currentOrdered].sort(() => Math.random() - 0.5);
+    const chosen = shuffled.slice(0, need).map((o) => o.name);
+    // Avoid dispatch if selection identical
+    const same = chosen.length === currentTagged.length && chosen.every((n) => currentTagged.includes(n));
+    if (!same) dispatch({ type: 'assignBaemin', names: chosen });
+  }, [progress, totalMembers, state.orders, dispatch]);
 
   return (
     <div className="space-y-3">
@@ -34,16 +60,29 @@ export default function OrderStatus() {
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
         <div className="sbx-card">
           <h4 className="font-medium">주문자</h4>
-          <ul className="mt-2 space-y-1 text-sm text-gray-700">
+          <ul className="mt-2 space-y-1 text-sm text-gray-700 divide-y divide-gray-200">
             {state.orders.map((o, i) => (
-              <li key={i} className="flex items-center justify-between gap-2">
-                <span>
-                  {o.name} — {o.status === 'passed' ? '주문 안함' : o.menu}
+              <li key={i} className="flex items-center justify-between gap-2 py-2">
+                <span className="flex items-center gap-2 relative">
+                  <span className='flex flex-col gap-1'>
+                    <span className='flex flex-row gap-1'>[{o.name}]      {o.tags?.includes('배달의민족') && (
+                    <span title="배달의민족 선정">
+                      <Image
+                        src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1599555979/noticon/xvxk96xzmsxoxjq95dfw.png"
+                        alt="배달의민족"
+                        width={18}
+                        height={18}
+                      />
+                    </span>
+                  )}</span>
+                    <span>{o.status === 'passed' ? '주문 안함' : o.menu}</span>
+                  </span>
+             
                 </span>
                 <button
                   type="button"
                   aria-label={`삭제: ${o.name}`}
-                  className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:bg-gray-50"
+                  className="inline-flexn flex-shrink-0 h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:bg-gray-50"
                   onClick={async () => {
                     try {
                       const ts = o.timestamp ? new Date(o.timestamp) : new Date();
