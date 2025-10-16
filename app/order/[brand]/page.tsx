@@ -7,11 +7,17 @@ interface Props {
   params: { brand: string };
 }
 
-const BRANDS = ['oozy', 'gate'];
+const BRANDS = ['oozy', 'gate'] as const;
+type BrandKey = (typeof BRANDS)[number];
+
+function isBrandKey(v: string): v is BrandKey {
+  return (BRANDS as readonly string[]).includes(v);
+}
 
 export default function OrderPage({ params }: Props) {
-  const brand = params.brand?.toLowerCase();
-  if (!BRANDS.includes(brand)) return notFound();
+  const brandParam = (params.brand ?? '').toLowerCase();
+  if (!isBrandKey(brandParam)) return notFound();
+  const brand: BrandKey = brandParam;
 
   return (
     <div className="space-y-6">
@@ -26,4 +32,3 @@ export default function OrderPage({ params }: Props) {
     </div>
   );
 }
-
