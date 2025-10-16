@@ -1,8 +1,17 @@
 "use client";
 import { createContext, useContext, useEffect, useReducer, type ReactNode } from 'react';
 
+type OrderItem = {
+  name: string;
+  menu: string | null;
+  status: 'ordered' | 'passed';
+  brandKey: 'oozy' | 'gate' | null;
+  timestamp: string;
+  tags?: string[];
+};
+
 type OrderState = {
-  orders: { name: string; menu: string | null; status: 'ordered' | 'passed'; brandKey: 'oozy' | 'gate' | null; timestamp: string }[];
+  orders: OrderItem[];
   totalMembers: number;
   selectedMenu: string | null;
   currentBrand: 'oozy' | 'gate' | null;
@@ -17,7 +26,9 @@ type Action =
   | { type: 'pass'; name: string }
   | { type: 'selectMenu'; name: string | null }
   | { type: 'remove'; index: number }
-  | { type: 'setOrders'; orders: OrderState['orders'] };
+  | { type: 'setOrders'; orders: OrderState['orders'] }
+  | { type: 'assignBaemin'; names: string[] }
+  | { type: 'clearBaemin' };
 
 function reducer(state: OrderState, action: Action): OrderState {
   switch (action.type) {
@@ -30,7 +41,14 @@ function reducer(state: OrderState, action: Action): OrderState {
         ...state,
         orders: [
           ...state.orders,
-          { name: action.name, menu: action.menu, status: 'ordered', brandKey: state.currentBrand, timestamp: new Date().toISOString() },
+          {
+            name: action.name,
+            menu: action.menu,
+            status: 'ordered',
+            brandKey: state.currentBrand,
+            timestamp: new Date().toISOString(),
+            tags: [],
+          },
         ],
       };
     case 'pass':
@@ -38,7 +56,14 @@ function reducer(state: OrderState, action: Action): OrderState {
         ...state,
         orders: [
           ...state.orders,
-          { name: action.name, menu: null, status: 'passed', brandKey: state.currentBrand, timestamp: new Date().toISOString() },
+          {
+            name: action.name,
+            menu: null,
+            status: 'passed',
+            brandKey: state.currentBrand,
+            timestamp: new Date().toISOString(),
+            tags: [],
+          },
         ],
       };
     case 'selectMenu':
@@ -48,8 +73,27 @@ function reducer(state: OrderState, action: Action): OrderState {
       if (action.index >= 0 && action.index < next.length) next.splice(action.index, 1);
       return { ...state, orders: next };
     }
-    case 'setOrders':
-      return { ...state, orders: action.orders };
+    case 'setOrders': {
+      const normalized = action.orders.map((o) => ({ ...o, tags: o.tags ?? [] }));
+      return { ...state, orders: normalized };
+    }
+    case 'assignBaemin': {
+      const target = new Set(action.names);
+      const next = state.orders.map((o) => {
+        const tags = new Set(o.tags ?? []);
+        if (target.has(o.name) && o.status === 'ordered') {
+          tags.add('배달의민족');
+        } else {
+          tags.delete('배달의민족');
+        }
+        return { ...o, tags: Array.from(tags) };
+      });
+      return { ...state, orders: next };
+    }
+    case 'clearBaemin': {
+      const next = state.orders.map((o) => ({ ...o, tags: (o.tags ?? []).filter((t) => t !== '배달의민족') }));
+      return { ...state, orders: next };
+    }
     default:
       return state;
   }
